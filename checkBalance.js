@@ -5,7 +5,7 @@ function checkBalance(string, position) {
         return true;   
     }
     
-	if(string[position] == "(" && string[position+1] == ")") {
+    if(string[position] == "(" && string[position+1] == ")") {
         string.splice(position, 2);
         return checkBalance(string, 0);
     }
